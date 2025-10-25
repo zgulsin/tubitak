@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const bordo = Color(0xFF6A0D25); // koyu bordo tonu
+    const bordo = Color(0xFF6A0D25); 
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -59,7 +59,7 @@ class _NotificationPageState extends State<NotificationPage> {
     },
   ];
 
-  /// 🔔 Tüm bildirimleri okundu yap
+  
   void markAllAsRead() {
     setState(() {
       for (var n in notifications) {
@@ -76,7 +76,7 @@ class _NotificationPageState extends State<NotificationPage> {
       appBar: AppBar(
         title: const Text("Bildirimler"),
         actions: [
-          // 🔔 Sağ üstte bildirim simgesi
+           
           IconButton(
             icon: const Icon(Icons.notifications_active_rounded),
             tooltip: "Tümünü okundu olarak işaretle",
@@ -104,8 +104,8 @@ class _NotificationPageState extends State<NotificationPage> {
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
               decoration: BoxDecoration(
                 color: isRead
-                    ? const Color(0xFFFBE9EC) // okundu → açık pembe
-                    : const Color(0xFFFADEE3), // okunmadı → koyu bordo tonu
+                    ? const Color(0xFFFBE9EC) 
+                    : const Color(0xFFFADEE3), 
                 border: Border.all(color: bordo.withOpacity(0.5), width: 1.2),
                 borderRadius: BorderRadius.circular(12),
               ),
@@ -134,14 +134,14 @@ class _NotificationPageState extends State<NotificationPage> {
         },
       ),
       bottomNavigationBar: SafeArea(
-        minimum: const EdgeInsets.only(bottom: 8), // alttan biraz boşluk
+        minimum: const EdgeInsets.only(bottom: 8), 
         child: Container(
           height: 60,
           decoration: const BoxDecoration(
             border: Border(
               top: BorderSide(color: Color(0xFF6A0D25), width: 1.2),
             ),
-            color: Colors.white, // sabit beyaz zemin
+            color: Colors.white,  sabit beyaz zemin
           ),
           child: const Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
