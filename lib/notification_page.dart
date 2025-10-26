@@ -141,7 +141,7 @@ class _NotificationPageState extends State<NotificationPage> {
             border: Border(
               top: BorderSide(color: Color(0xFF6A0D25), width: 1.2),
             ),
-            color: Colors.white,  sabit beyaz zemin
+            color: Colors.white,  
           ),
           child: const Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
