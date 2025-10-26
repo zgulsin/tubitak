@@ -9,40 +9,46 @@ class BolumHakkindaPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final List<Map<String, String>> akademisyenler = [
       {
-        "isim": "Dr. Ayşe Yılmaz",
-        "alan": "Yapay Zeka",
-        "mail": "ayse.yilmaz@universite.edu.tr",
-        "foto": "assets/hoca1.jpg",
+        "isim": "Doç. Dr. Kemal AKYOL (Bölüm Başkanı)",
+        "alan": "Bilgisayar Bilimleri ",
+        "mail": "kakyol@kastamonu.edu.tr",
+        "foto": "/assets/kemal.webp",
       },
       {
-        "isim": "Dr. Mehmet Can",
-        "alan": "Cyber",
-        "mail": "mehmet.can@universite.edu.tr",
-        "foto": "assets/hoca2.jpg",
+        "isim": "Dr. Öğr. Üyesi Ali Burak ÖNCÜL",
+        "alan": "Bilgisayar Bilimleri ",
+        "mail": "boncul@kastamonu.edu.tr",
+        "foto": "/assets/aliburak.webp",
       },
       {
-        "isim": "Prof. Ali Demir",
-        "alan": "Veri Bilimi",
+        "isim": "Dr. Öğr. Üyesi Ahmet Nusret ÖZALP (Bölüm Başkan Yardımcısı)",
+        "alan": "Bilgisayar Donanımı ",
         "mail": "ali.demir@universite.edu.tr",
-        "foto": "assets/hoca3.jpg",
+        "foto": "/assets/nusret.webp",
       },
       {
-        "isim": "Dr. Elif Korkmaz",
-        "alan": "Ağ Güvenliği",
-        "mail": "elif.korkmaz@universite.edu.tr",
-        "foto": "assets/hoca4.jpg",
+        "isim": "Doç. Dr. Ekmel ÇETİN",
+        "alan": "Bilgisayar Bilimleri ",
+        "mail": "ekmel@kastamonu.edu.tr",
+        "foto": "assets/ekmel.webp",
       },
       {
-        "isim": "Doç. Burak Akın",
-        "alan": "Yapay Zeka",
-        "mail": "burak.akin@universite.edu.tr",
-        "foto": "assets/hoca5.jpg",
+        "isim": "Doç. Dr. Salih GÖRGÜNOĞLU",
+        "alan": "Bilgisayar Donanımı",
+        "mail": "sgorgunoglu@kastamonu.edu.tr",
+        "foto": "assets/salih.webp",
       },
       {
-        "isim": "Arş. Gör. Zeynep Arslan",
-        "alan": "Cyber",
-        "mail": "zeynep.arslan@universite.edu.tr",
-        "foto": "assets/hoca6.jpg",
+        "isim": "Doç. Dr. Melike KAPLAN YALÇIN (Bölüm Başkan Yardımcısı)",
+        "alan": "Bilgisayar Bilimleri ",
+        "mail": "mkaplan@kastamonu.edu.tr",
+        "foto": "assets/melike.webp",
+      },
+      {
+        "isim": "Dr. Öğr. Üyesi Atilla SUNCAK",
+        "alan": "Bilgisayar Teknolojileri ",
+        "mail": "atillasuncak@kastamonu.edu.tr",
+        "foto": "assets/atilla.webp",
       },
     ];
 
@@ -60,9 +66,7 @@ class BolumHakkindaPage extends StatelessWidget {
           },
           child: const Padding(
             padding: EdgeInsets.all(8.0),
-            child: CircleAvatar(
-              backgroundImage: AssetImage('assets/profile.png'),
-            ),
+            child: CircleAvatar(backgroundImage: AssetImage('')),
           ),
         ),
         centerTitle: true,
@@ -190,7 +194,7 @@ class BolumHakkindaPage extends StatelessWidget {
               ),
             ),
           ),
-          // 🔽 Alt Menü
+
           Container(
             height: 65,
             decoration: const BoxDecoration(
